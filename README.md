@@ -1,6 +1,6 @@
 ![GitHub Logo](/images/wordpress-i.png)
 
-# Awesome wordpress boilerplate
+#           Awesome wordpress boilerplate
 
 My wordpress boilerplate. Great to use if you want to start a wordpress project with Timber. The structure is heavily inspired by [Mickael](https://github.com/mickaelzhang) who helps me  to learn more about Timber. Enjoy !
 
