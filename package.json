@@ -1,0 +1,45 @@
+{
+  "name": "wordpress-boilerplate",
+  "version": "1.0.0",
+  "description": "WordPress boilerplate using composer, yarn, gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "author": "Armel Cantin",
+  "license": "MIT",
+  "peerDependencies": {
+    "babel-core": "6.x || ^7.0.0-bridge.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/register": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.26.3",
+    "browserify": "^14.4.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "8.0.0-beta.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "node-sass": "^4.10.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.3",
+    "require-dir": "^0.3.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "gulp-plumber": "^1.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "del": "^3.0.0"
+  },
+  "presets": [
+    "@babel/preset-env"
+  ]
+}

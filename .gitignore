@@ -1,0 +1,63 @@
+# Ignore languages files - Depend on user
+languages/
+
+# Misceallaenous
+upgrade/
+dist/
+
+# Composer stuff
+vendor/
+composer.lock
+
+# WordPress
+public/wp
+public/.htaccess
+
+# ignore everything in the "public" directory, except:
+# mu-plugins, plugins, and themes directories
+public/mu-plugins/*
+!public/mu-plugins/.gitkeep
+public/plugins/*
+!public/plugins/.gitkeep
+public/themes/*
+!public/themes/armel/
+
+# Ignore config file
+.env
+
+# ignore node dependency directories (used by grunt and gulp)
+node_modules/
+yarn.lock
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.idea
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
