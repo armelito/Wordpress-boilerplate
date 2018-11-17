@@ -1,3 +1,6 @@
+![GitHub Logo](/images/timberf.png)
+Format: ![Alt Text](url)
+
 # Awesome wordpress boilerplate
 
 My wordpress boilerplate. Great to use if you want to start a wordpress project with Timber. The structure is heavily inspired by [Mickael](https://github.com/mickaelzhang) who helps me  to learn more about Timber. Enjoy !
@@ -32,12 +35,12 @@ composer project:setup
 
 > Create a new database. Put its name in .env file, user name and user password
 
-** The boilerplate assumed that mamp run on port 8000 **
-** If yours is different please go in mamp preferences so you can switch mamp port to 8000 **
+**The boilerplate assumed that mamp run on port 8000**
+**If yours is different please go in mamp preferences so you can switch mamp port to 8000**
 
 > If you prefere you can change the .env and gulpconfig file to listen the port you want.
 
-** * You're ready to start **
+**You're ready to start**
 
 * If autoload.php file in vendor directory is missing don't forget to create it !
 * If you rename the project folder, or if you are no longer in local host, be sure to have changed the proxy and site url.
@@ -51,3 +54,7 @@ Feel free to use them :
 * `yarn run start` : Start the dev environment
 
 - A script which builds all assets is missing. Useless to run build. Coming soon ! 
+
+
+![GitHub Logo](/images/timberw.png)
+Format: ![Alt Text](url)
