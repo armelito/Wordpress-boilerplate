@@ -1,4 +1,4 @@
-![GitHub Logo](/images/timberf.png)
+![GitHub Logo](/images/wordpress-i.png)
 Format: ![Alt Text](url)
 
 # Awesome wordpress boilerplate
