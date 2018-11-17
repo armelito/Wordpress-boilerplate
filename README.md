@@ -1,5 +1,4 @@
 ![GitHub Logo](/images/wordpress-i.png)
-Format: ![Alt Text](url)
 
 # Awesome wordpress boilerplate
 
@@ -55,6 +54,4 @@ Feel free to use them :
 
 - A script which builds all assets is missing. Useless to run build. Coming soon ! 
 
-
 ![GitHub Logo](/images/timberw.png)
-Format: ![Alt Text](url)
