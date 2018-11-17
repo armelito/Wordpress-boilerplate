@@ -1,7 +1,7 @@
 // CONFIG
 
 const THEME_NAME = 'armel'
-const THEME_PATH = './web/themes/' + THEME_NAME + '/'
+const THEME_PATH = './public/themes/' + THEME_NAME + '/'
 
 // EXPORT CONFIG SETTINGS
 module.exports = {
