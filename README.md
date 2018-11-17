@@ -1,8 +1,24 @@
-![GitHub Logo](/images/wordpress-i.png)
-
 #           Awesome wordpress boilerplate
 
-My wordpress boilerplate. Great to use if you want to start a wordpress project with Timber. The structure is heavily inspired by [Mickael](https://github.com/mickaelzhang) who helps me  to learn more about Timber. Enjoy !
+![GitHub Logo](/images/wordpress-i.png)
+
+# About
+
+This is a start for developing Worpress themes. The project structure is quiet closed to React, Angular, etc. This boilerplate is adaptable.
+
+Great to use if you want to start a wordpress project with Timber. The structure is heavily inspired by [Mickael](https://github.com/mickaelzhang) who helps me  to learn more about Timber. Enjoy !
+
+###Features
+
+* Wordpress as a submodule
+* Timber for a perfect seperation between html & php
+* Seperate configs for development, staging & production environments
+* Gulp with browersync offers many options like seeing live changes on every devices
+* SCSS
+* JPG, PNG, SVG image minification
+* Composer with autoloader
+* Webpack to bundle (soon)
+
 
 ## What does it contain
 * [WordPress Packagist](https://wpackagist.org)
@@ -16,7 +32,7 @@ To run this boilerplate, you need :
 * `composer` installed
 * `yarn` or `npm` installed
 
-## Installation
+## Getting started
 - You need to install first all the dependencies.
 You need to run so :
 ```
@@ -32,16 +48,22 @@ composer project:setup
 
 > This create a .env file in the root directory. You need to put all your sensitive information here.
 
-> Create a new database. Put its name in .env file, user name and user password
+> Create a new database for this project.
 
-**The boilerplate assumed that mamp run on port 8000**
-**If yours is different please go in mamp preferences so you can switch mamp port to 8000**
+## Change files
 
-> If you prefere you can change the .env and gulpconfig file to listen the port you want.
+**You need a local php server to run wordpress**
+**The .env config run on port 8000**
+**Change it if necessary**
+
+* Setup the example.env in /bin for your futur project. 
+* Setup .env file to connect to the database
+* Change gulpconfig.js to setup different config, paths
+* You can create your theme folder public/themes/your-theme.
+* Don't forget to add the path of files you don't want to be commit in .gitignore 
 
 **You're ready to start**
 
-* If autoload.php file in vendor directory is missing don't forget to create it !
 * If you rename the project folder, or if you are no longer in local host, be sure to have changed the proxy and site url.
 * Don't forget to create a new database and to linked the project to it.
 
@@ -53,5 +75,15 @@ Feel free to use them :
 * `yarn run start` : Start the dev environment
 
 - A script which builds all assets is missing. Useless to run build. Coming soon ! 
+
+## Development
+To start run : `yarn run start`
+
+In development, gulp will do a couple things : 
+
+* Run browersync on http://localhost:3000 
+* Build scss to css files
+* Watch for changes in php files, images, icons, font, etc...
+* Live reloading on change
 
 ![GitHub Logo](/images/timberw.png)
