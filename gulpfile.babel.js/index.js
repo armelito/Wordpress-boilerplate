@@ -18,7 +18,7 @@ const paths =
   },
   scripts: {
     src: '../public/themes/armel/*.js',
-    dest: '../web/themes/armel/dist/js/'
+    dest: '../public/themes/armel/dist/js/'
   },
   scss: {
     src: '../public/themes/mz/*.scss',
