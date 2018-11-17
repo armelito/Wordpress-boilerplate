@@ -16,5 +16,5 @@ module.exports = {
   theme: {
     name: THEME_NAME
   },
-	proxy: 'localhost:8000/Wordpress-boilerplate/public'
+	proxy: 'localhost:8000/Wordpress-boilerplate/public' // change this url if you rename or are no longer in local anymore
 }

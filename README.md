@@ -33,6 +33,8 @@ composer project:setup
 - You're ready to start
 
 * If autoload.php file in vendor directory is missing don't forget to create it !
+* If you rename the project folder, or if you are no longer in local host, be sure to have changed the proxy and site url.
+* Don't forget to create a new database and to linked the project to it.
 
 ## Scripts
 Some script can help you during the development process of your wordpress site.
