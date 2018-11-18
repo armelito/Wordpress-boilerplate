@@ -1,8 +1,7 @@
-#           Awesome wordpress boilerplate
+#           Wordpress boilerplate
 
 ![GitHub Logo](/images/wordpress-i.png)
 
-# About
 
 This is a start for developing Worpress themes. The project structure is quiet closed to React, Angular, etc. This boilerplate is adaptable.
 
@@ -53,19 +52,14 @@ composer project:setup
 ## Change files
 
 **You need a local php server to run wordpress**
-**The .env config run on port 8000**
-**Change it if necessary**
+>The .env config run on port 8000
+>Change it if necessary
 
 * Setup the example.env in /bin for your futur project. 
 * Setup .env file to connect to the database
 * Change gulpconfig.js to setup different config, paths
 * You can create your theme folder public/themes/your-theme.
 * Don't forget to add the path of files you don't want to be commit in .gitignore 
-
-**You're ready to start**
-
-* If you rename the project folder, or if you are no longer in local host, be sure to have changed the proxy and site url.
-* Don't forget to create a new database and to linked the project to it.
 
 ## Scripts
 Some script can help you during the development process of your wordpress site.
@@ -76,8 +70,10 @@ Feel free to use them :
 
 - A script which builds all assets is missing. Useless to run build. Coming soon ! 
 
-## Development
-To start run : `yarn run start`
+# Congratulation !
+
+## Let's start 
+>yarn run start
 
 In development, gulp will do a couple things : 
 
