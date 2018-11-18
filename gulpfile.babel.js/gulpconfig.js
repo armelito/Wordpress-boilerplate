@@ -1,8 +1,11 @@
 // CONFIG
-
-const THEME_NAME = 'armel'
-const THEME_PATH = './public/themes/' + THEME_NAME + '/'
-
+// change variables if necessary
+const THEME_NAME = 'armel' // theme name
+const THEME_PATH = './public/themes/' + THEME_NAME + '/' // theme pathe
+const PROJECT_NAME = 'Wordpress-boilerplate' // if you rename project change it
+const THEME_HOST = 'localhost:8000/' // if mamp is running on other port
+const DIR_PROJECT = THEME_HOST + PROJECT_NAME + '/public/' // public could be web or other
+//
 // EXPORT CONFIG SETTINGS
 module.exports = {
   path: {
@@ -12,9 +15,22 @@ module.exports = {
     dist: './dist/', // dist
     composer: './vendor/', // composer
     modules: './node_modules/', // npm 
+    // urls
+    html: {
+      src: '../public/themes/armel/*.html',
+    },
+    scripts: {
+      src: '../public/themes/armel/*.js',
+      dest: '../public/themes/armel/dist/js/'
+    },
+    scss: {
+      src: '../public/themes/mz/*.scss',
+      dest: '../public/themes/armel/dist/css/'
+    }
   },
   theme: {
     name: THEME_NAME
   },
-	proxy: 'localhost:8000/Wordpress-boilerplate/public' // change this url if you rename or are no longer in local anymore
+	proxy: DIR_PROJECT
 }
+// END 

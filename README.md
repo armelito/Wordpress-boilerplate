@@ -52,8 +52,8 @@ composer project:setup
 ## Change files
 
 **You need a local php server to run wordpress**
->The .env config run on port 8000
->Change it if necessary
+>The .env config wp_host on port 8000
+
 
 * Setup the example.env in /bin for your futur project. 
 * Setup .env file to connect to the database
