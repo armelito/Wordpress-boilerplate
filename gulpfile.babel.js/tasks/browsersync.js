@@ -1,12 +1,13 @@
 import gulp from 'gulp'
 import browserSync from 'browser-sync'
 import config from '../gulpconfig'
+import style from './style';
 
 // watch function
 const watch = () => 
 {
   gulp.watch(config.path.scripts.src).on('change', () => server.reload)
-  gulp.watch(config.path.scss.src).on('change', () => server.reload)
+  gulp.watch(config.path.scss.src).on('change', () => gulp.series(style, server.reload))
   gulp.watch(config.path.html.src).on('change', () => server.reload)
 }
 
@@ -35,5 +36,4 @@ const serves = () =>
   watch()
 }
 
-const serve = gulp.series(serves)
-export default serve
+export default serves

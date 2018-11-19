@@ -1,0 +1,196 @@
+body
+{
+   
+    margin: 0 auto;
+    font-family: 'Butler', serif;
+}
+
+/*  header.twig  */ 
+
+.header
+{
+    background: rgb(199, 26, 26);
+    z-index: 12;
+    width: 100vw;
+    height: 80px;
+    position: relative;
+    text-decoration: none;
+}
+
+.header_container
+{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    background-color: transparent;
+}
+
+.header_logo
+{
+    width: 30%;
+    height: 80px;
+    margin: 4px auto;
+}
+
+.header_logo_link
+{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: space-evenly;
+    font-size: 1.1em;
+}
+
+.display_logo_link
+{
+    margin: 14px 50px;
+}
+
+.display_menu_link
+{
+    margin: 28px auto;
+}
+
+
+
+#nav_main
+{
+    display: block;
+    width: 71%;
+    height: 80px;
+    margin: 0 auto;
+}
+
+
+#menu_enter
+{
+    position: absolute;
+}
+
+#menu_quit
+{
+    position: absolute;
+    display: none;
+}
+
+.nav_network
+{
+    display: block;
+    width: 16%;
+    height: 80px;
+}
+
+/*  menu.twig  */
+
+.display_items
+{
+    display: flex;
+    list-style: none;
+    margin: 8px 10px;
+}
+
+#display_item
+{
+    margin-left: 0px;
+    margin-right: 92px;
+    justify-content: space-evenly;
+}
+
+.menu_target_link
+{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+}
+
+
+.menu-item
+{
+
+    transition-timing-function: linear;
+}
+
+.menu-item:hover
+{
+    transform: scale(1.2);
+}
+
+#mobile_header_first
+    {
+        display: none;
+    }
+/* network.twig */
+
+.display_networks
+{
+    display: flex;
+    list-style: none;
+}
+
+#display_network
+{
+    margin-left: 14px;
+    margin-right: 22px;
+}
+
+/* post preview */
+
+.read-more
+{
+    margin-left: 400px;
+    margin-top: 20px;
+    background: black;
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 112px;
+    padding: 4px 2px;
+    text-align: center;
+}
+
+/* font awesome ico */
+
+.fa 
+{
+    margin-top: 18px;
+    margin-right: 40px;
+    color: white;
+    justify-content: space-around;
+}
+
+.burger_menu
+{
+    display: none;
+}
+
+#nav_responsive
+{
+    display: none;
+}
+
+.home_background
+{
+    width: 100vw;
+    height: auto;
+    transform: translateY(-100px);
+}
+
+.image_home
+{
+    max-width: 100%;
+    max-height: auto;
+}
+
+.home_presentation
+{
+    width: 100vw;
+    height: auto;
+}
+
+.welcome_title
+{
+    width: 100vw;
+    height: 300px;
+}

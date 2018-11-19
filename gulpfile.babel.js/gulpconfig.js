@@ -17,15 +17,16 @@ module.exports = {
     modules: './node_modules/', // npm 
     // urls
     html: {
-      src: '../public/themes/armel/*.html',
+      src: '../public/themes/armel/views/**/*.twig',
+      dest: './public/themes/armel/dist/twig/'
     },
     scripts: {
-      src: '../public/themes/armel/*.js',
-      dest: '../public/themes/armel/dist/js/'
+      src: '../public/themes/armel/src/*.js',
+      dest: './public/themes/armel/dist/js/'
     },
     scss: {
-      src: '../public/themes/mz/*.scss',
-      dest: '../public/themes/armel/dist/css/'
+      src: '../public/themes/armel/src/scss/**/*.scss',
+      dest: './public/themes/armel/dist/css/'
     }
   },
   theme: {

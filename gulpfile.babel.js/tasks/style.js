@@ -5,14 +5,15 @@ import config from '../gulpconfig'
 //import browserSync from 'browser-sync'
 
 // sass compile & inject
-const styles = () => 
+const style = () => 
 {
 
-  return gulp.src(config.path.scss.src, { sourcemaps: true })
-      .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest(config.path.scss.dest))
-      .pipe(server.stream());
+  return gulp.src(config.path.src + 'scss/**/*.scss', { sourcemaps: true })
+      .pipe(sass({
+        includePaths: [config.path.src + 'scss/'],
+        precision: 6}).on('error', sass.logError))
+      .pipe(gulp.dest(config.path.build + 'css/'))
 }
 
-const style = gulp.series(styles)
+
 export default style;

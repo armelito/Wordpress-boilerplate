@@ -6,5 +6,5 @@ import style from './style';
 import serve from './browsersync';
 
 // default task export
-const dev = gulp.series(clean, script, serve, style);
+const dev = gulp.series(clean, script, style, serve);
 export default dev;

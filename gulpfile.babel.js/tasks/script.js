@@ -5,14 +5,13 @@ import gulp from 'gulp'
 import config from '../gulpconfig'
 
 // scripts minify
-const scripts = () =>
+const script = () =>
 {
   return gulp.src(config.path.scripts.src, { sourcemaps: true })
     .pipe(babel())
     .pipe(uglify())
     .pipe(concat('index.min.js'))
-    .pipe(gulp.dest(config.path.scripts.dest));
+    .pipe(gulp.dest(config.path.build+'js'))
 }
 
-const script = gulp.series(scripts)
 export default script;
