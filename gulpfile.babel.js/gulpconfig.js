@@ -15,20 +15,8 @@ module.exports = {
     dist: './dist/', // dist
     composer: './vendor/', // composer
     modules: './node_modules/', // npm 
-    // urls
-    html: {
-      src: '../public/themes/armel/views/**/*.twig',
-      dest: './public/themes/armel/dist/twig/'
-    },
-    scripts: {
-      src: '../public/themes/armel/src/*.js',
-      dest: './public/themes/armel/dist/js/'
-    },
-    scss: {
-      src: '../public/themes/armel/src/scss/**/*.scss',
-      dest: './public/themes/armel/dist/css/'
-    }
   },
+
   theme: {
     name: THEME_NAME
   },

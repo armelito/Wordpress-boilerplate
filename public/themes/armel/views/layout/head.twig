@@ -14,10 +14,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		{{ function('wp_head') }}
-		<link rel="stylesheet" href="{{site.theme.link}}/src/scss/main.scss">
-        {% block stylesheets %}
-
-		{% endblock %}
+        {% block stylesheets %}{% endblock %}
     </head>
     <body class="{{body_class}}">
         {% block body %}{% endblock %}
@@ -25,3 +22,5 @@
         {% block javascripts %}{% endblock %}
     </body>
 </html>
+
+
