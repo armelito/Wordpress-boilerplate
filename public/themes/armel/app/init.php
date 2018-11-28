@@ -24,10 +24,12 @@ new Core\BaseTheme();
 new Core\SetupTheme();
 new Core\SetupTimber();
 
-/**
- * Custom Post Types
-   new PostType\PostTypeName();
- */
+// Custom Post Types
+   
+new PostType\PostTypeName();
+new PostType\Custom();
+
+
 
 // Include AJAX files
 foreach (glob(__DIR__.'/Ajax/*.php') as $filename) {

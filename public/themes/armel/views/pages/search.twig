@@ -1,0 +1,12 @@
+{% extends "./layout/base.twig" %}
+
+{% block content %}
+  {# see `base.twig:27` for where this block's content will be inserted #}
+  <div class="content-wrapper">
+    {% for post in posts %}
+      {% include ['pages/tease-'~post.post_type~'.twig', 'pages/tease.twig'] %}
+    {% endfor %}
+
+    {% include 'pages/partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
+  </div>
+{% endblock %}

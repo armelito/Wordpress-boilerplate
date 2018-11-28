@@ -12,8 +12,9 @@ class SetupTimber extends \TimberSite {
 
 	function add_to_context( $context ) {
 		$context['menu'] = new \TimberMenu();
+		$context['event_sidebar'] = \Timber::get_widgets('sidebar-1');
+		$context['dynamic_sidebar'] = \Timber::get_widgets('sidebar-2');
 		$context['site'] = $this;
-		
 		$context['url'] = array(
 					'theme' => THEME_URL,
 					'css' => CSS_URL,
@@ -21,6 +22,7 @@ class SetupTimber extends \TimberSite {
 					'js' => JS_URL
 				);
 		return $context;
+
 	}
 
 	function add_to_twig( $twig ) {
@@ -34,5 +36,6 @@ class SetupTimber extends \TimberSite {
     function myfoo( $text ) {
         $text .= ' bar!';
         return $text;
-    }
+	}
+	
 }

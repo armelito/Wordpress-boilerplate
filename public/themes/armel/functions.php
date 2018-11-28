@@ -9,3 +9,4 @@ require_once(__DIR__ . '/../../../vendor/autoload.php');
 // Custom informations to configure your theme functions.
 require_once( "app/config.php" );
 require_once( "app/init.php" );
+

@@ -23,7 +23,7 @@ $context = Timber::get_context();
 $context['event_sidebar'] = Timber::get_widgets('sidebar-2');
 $args = array(
     // Get post type project
-    'post_type' => 'posttype',
+    'post_type' => 'evenements',
 
     // Get all posts
     'posts_per_page' => -1,
@@ -34,7 +34,9 @@ $args = array(
     ));
     
 $post = Timber::get_posts( $args );
-$context['events'] = $post;
+$context['evenement'] = $post;
+
+
 $templates = array(
     'pages/event.twig'
 );

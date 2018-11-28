@@ -4,7 +4,7 @@
  */
 namespace App\PostType;
 
-class PostTypeName {
+class Custom {
     protected $post_type = 'posttype';
 
     function __construct() {

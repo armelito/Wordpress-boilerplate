@@ -1,0 +1,20 @@
+{% extends "tease.twig" %}
+
+{% block articles %}
+	<aside class="sidebar">
+	{{sidebar}}
+	</aside>
+	<section class="article-content">
+				<h2 class="article-h1"><a href="{{post.link}}">{{post.title}}</a></h2>
+				<p class="blog-author">
+					<span>By</span><a href="{{post.author.path}}"> {{ post.author.name }} </a><span>&bull;</span> {{ post.post_date|date}}
+				</p>
+				<div class="article-body">
+					{{post.content}}
+				</div>
+			</section>
+
+		{% if post.thumbnail.src %}
+			<img class="zizi" src="{{post.thumbnail.src}}" />
+		{% endif %}
+{% endblock %}

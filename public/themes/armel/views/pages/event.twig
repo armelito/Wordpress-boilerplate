@@ -1,8 +1,8 @@
 {% extends "./layout/base.twig" %}
 
 {% block content %}
- 	{% for projects in evenements %}
-		<img class="aligncenter size-full wp-image-11" src="//localhost:3000/Wordpress-boilerplate/public/uploads/2018/11/background3.jpg" alt="" width="1800" height="1200" />
+<h1>hello</h1>
+ 	{% for post in events %}
 		<div class="content-wrapper">
 			<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
 				<section class="article-content">
@@ -10,14 +10,12 @@
 					<div class="article-body">
 						{{post.content}}
 					</div>
+						<div class="article-body">
+						{{post.lieux}}
+					</div>
 				</section>
 			</article>
 		</div>
-		{% if dynamic_sidebar %}
-		<div class="">
-			{{ dynamic_sidebar }}
-		</div>
-		{% endif %}
 	{% endfor %}	
 {% endblock %}
 
